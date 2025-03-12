@@ -4,8 +4,9 @@ let listaAmigosHTML = document.getElementById("listaAmigos");
 let resultado = document.getElementById("resultado");
 
 function agregarAmigo() { // Tomar texto del html y agregarlo a la lista
-    let amigo = document.getElementById("amigo").value;
-    verificadorDeNombre(amigo);
+    let amigo = document.getElementById("amigo");
+    verificadorDeNombre(amigo.value);
+    amigo.value = "";
 }
 
 
